@@ -46,6 +46,18 @@ npm start
 npm run dev
 ```
 
+### Docker
+
+Build the image:
+```bash
+docker build -t github-jwt-api .
+```
+
+Run the container:
+```bash
+docker run -p 3000:3000 --env-file .env github-jwt-api
+```
+
 The API will be available at `http://localhost:3000/jwt`
 
 ### Generate a JWT token
